@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"
+        standalone="yes"?>
+<Liste><kundenListe>
+    <nummer>4711</nummer>
+    <name>Hugo Habicht</name>
+    <firmenAdresse>
+        <ort>Clausthal-Zellerfeld</ort>
+        <plz>35678</plz>
+        <strasse>Schuetteweg 3</strasse>
+    </firmenAdresse>
+    <hobbies>Fussball</hobbies><hobbies>Handball</hobbies><hobbies>Kopfball</hobbies></kundenListe><kundenListe><nummer>0815</nummer><name>Willi Winzig</name><firmenAdresse><ort>Clausthal-Zellerfeld</ort><plz>35678</plz><strasse>Schuetteweg 3</strasse></firmenAdresse><hobbies>Kochen</hobbies><hobbies>Backen</hobbies></kundenListe><kundenListe><nummer>1234</nummer><name>Harry Hurtig</name><firmenAdresse><ort>Westostwestfahlen</ort><plz>02497</plz><strasse>Hauptstr. 30</strasse></firmenAdresse><hobbies>Schach</hobbies></kundenListe></Liste>
