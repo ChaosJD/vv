@@ -1,26 +1,31 @@
 package de.fhr.inf.vv.bla;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import java.util.List;
 
 /**
  * Created by be on 16.05.2018.
  */
 
 @Entity
-@Table(name = "SuperDuperKunden")
 public class Kunde {
     @Id
     @GeneratedValue
     private Long nummer;
 
     private String vorname;
+    @Column(name="name")
     private String nachname;
+
+    @Embedded
+    private Adresse adresse;
+
+    @OneToMany(mappedBy = "kunde",cascade = CascadeType.ALL)
+    private List<Vertrag> vertraege;
+
 
     public Kunde(String vorname, String nachname) {
         this.vorname = vorname;
@@ -61,5 +66,21 @@ public class Kunde {
 
     public void setNachname(String nachname) {
         this.nachname = nachname;
+    }
+
+    public Adresse getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(Adresse adresse) {
+        this.adresse = adresse;
+    }
+
+    public List<Vertrag> getVertraege() {
+        return vertraege;
+    }
+
+    public void setVertraege(List<Vertrag> vertraege) {
+        this.vertraege = vertraege;
     }
 }
