@@ -1,5 +1,7 @@
 package de.fhr.inf.vv.threads.result;
 
+import de.fhr.inf.vv.threads.SlowOutputStream;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -7,8 +9,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
-
-import de.fhr.inf.vv.ueb05.SlowOutputStream;
 
 public class LoggerAcknowledge implements ILogger {
 	public interface AcknowledgeListener {

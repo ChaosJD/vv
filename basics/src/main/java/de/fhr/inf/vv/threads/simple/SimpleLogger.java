@@ -1,11 +1,11 @@
 package de.fhr.inf.vv.threads.simple;
 
+import de.fhr.inf.vv.threads.SlowOutputStream;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
-import de.fhr.inf.vv.ueb05.SlowOutputStream;
 
 public class SimpleLogger implements ILogger {
     OutputStream logFileStream = null;
